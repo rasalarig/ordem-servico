@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Página de Teste do Sistema de Ordem de Serviços</h1>
+	<h1>Página Teste do Sistema de Ordem de Serviços</h1>
 </body>
 </html>
