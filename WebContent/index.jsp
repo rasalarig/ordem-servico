@@ -1,12 +1,46 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!doctype html>
+<html lang="pt-br">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+    <title>Sistema de Ordem de Serviços</title>
+    <meta charset="UTF-8">
+	<link href="css/estilos.css" rel="stylesheet" type="text/css" >
+
+
 </head>
 <body>
-	<h1>Página Teste do Sistema de Ordem de Serviços</h1>
+      <header>
+	       <div class="logo">
+				LOGO
+		   </div>
+		   <div class="logout">
+				LOGOUT
+		   </div>
+	  </header>
+	  <div class="nav-total">
+	      <nav>
+		      <ul>
+			      <li><a href="#">Cadastros</a></li>
+			      <li><a href="#">Ordens de Serviços</a></li>
+				  <li><a href="#">Chamados</a></li>
+			  </ul>
+			  <div class="clear"></div> 
+	      </nav>
+	  </div>
+      <section id="pagina-total">
+		  
+		      <div class="borda">
+				<div class="fundo-linha">
+				  <div class="artigos">
+					<h2>CADASTROS</h2>
+				  </div>
+				</div>
+		      </div>
+      </section>
+	  <div id="rodape-total">
+      <footer>
+		 <small class="copy">Copyright© 2014 INICIATIVA21 - Sistema de Ordem de Serviços</small>
+		 <a href="#" class="up"><img src="img/up.png"/></a>
+	  </footer>
+      </div>
 </body>
 </html>
