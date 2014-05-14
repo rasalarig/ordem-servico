@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc 
+						http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+						http://www.springframework.org/schema/tx 
+						http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+						http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context-4.0.xsd
+						http://www.springframework.org/schema/aop
+						http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+	<!-- O código abaixo facilitará para não precisar ficar colocando todos 
+		os pacotes pela tag bean como anteriormente, todas classes q ficarão dentro 
+		desse caminho reconhecerá as tag do spring, como por exemplo @Repository,@PersistenceContext,@Transactional, 
+		ele é um scanner vai ser um contexto -->
+	<context:component-scan base-package="br.com.iniciativa21.ordemservico" />
+
+    <mvc:annotation-driven />
+	<mvc:default-servlet-handler/>
+
+	<mvc:interceptors>
+	  <bean class="br.com.iniciativa21.ordemservico.interceptor.AutorizadorInterceptor"/>
+	</mvc:interceptors>
+
+	<!-- Persiste as annotations -->
+    <bean
+		class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+
+	<!-- Construção do Objeto de Gestão de transações Spring JPA -->
+	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<!-- Vinculando com objeto EntityManagerFactory construida anteriormente -->
+		<property name="entityManagerFactory" ref="entityManagerFactory" />
+	</bean>
+
+	<!-- Ao anotar @Transaction irá chamar o gerenciador de transação -->
+ 	  <tx:annotation-driven transaction-manager="transactionManager"
+		proxy-target-class="true" />
+
+	<!-- Configurando o Data Source com os dados do banco -->
+        <!-- <bean id="MySqlDataSource"  class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+        <bean id="MySqlDataSource"  class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/ordemserviniciativa21" />
+		<property name="username" value="iniciativa21" />
+		<property name="password" value="admininiciativa21" />
+	</bean>
+
+	<!-- Criando um EntityManager -->
+	<bean id="entityManagerFactory"
+		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+
+		<!-- Referencia as propriedades do banco -->
+		<property name="dataSource" ref="MySqlDataSource" />
+
+		<!-- Qual o Adapter JPA? Neste caso é o hibernate -->
+	    <property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+			</bean>
+		</property>
+	</bean>
+
+  	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>
+                
+           
