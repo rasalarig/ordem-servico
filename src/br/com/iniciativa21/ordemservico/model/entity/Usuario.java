@@ -10,7 +10,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 // Comentario teste para commit 
-//
+
 
 @Entity
 public class Usuario {
