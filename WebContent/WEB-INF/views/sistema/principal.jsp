@@ -26,7 +26,7 @@
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <img src="resources/img/cadastros.png"/>
+                    <img src="resources/img/cadastros_os.png"/>
                   </div>
                   <div >
                     <p>Módulo de Cadastros</p>
@@ -57,7 +57,7 @@
                     <img src="resources/img/os.png"/>
                   </div>
                   <div >
-                    <p>Módulo de O.S</p>
+                    <p>Módulo de Ordem de Serviço</p>
                   </div>
                 </div>
               </div>
