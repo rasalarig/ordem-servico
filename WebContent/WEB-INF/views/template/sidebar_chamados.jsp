@@ -1,15 +1,11 @@
 <div class="collapse navbar-collapse navbar-ex1-collapse">
 
     <!--  Menu Lateral -->
-<!-- <ul class="nav navbar-nav side-nav">
-	<li class="active"><a href="index.html"><i class="fa fa-list"></i> Menu</a></li>
-	<li ><a href="index.html"><i class="fa fa-edit"></i> Usuário</a></li>
+	<ul class="nav navbar-nav side-nav">
+	<li class="active"><a href="eflog"><i class="fa fa-tasks"></i> Menu</a></li>
+	<li ><a href="index.html"><i class="fa fa-edit"></i> Chamados</a></li>
 
-
-		<li><a href="charts.html"><i class="fa fa-edit"></i> Funcionário</a></li>
-		<li><a href="charts.html"><i class="fa fa-edit"></i> Cliente</a></li>
-
-	</ul>-->
+	</ul>
 
     <!-- Menu Topo -->
 	<ul class="nav navbar-nav navbar-right navbar-user">
