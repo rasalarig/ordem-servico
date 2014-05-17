@@ -45,7 +45,7 @@ public class Usuario {
 	public String getPermissao() {
 		return permissao;
 	}
-	public void setPermissao2(String permissao) {
+	public void setPermissao(String permissao) {
 		this.permissao = permissao;
 	}
 
