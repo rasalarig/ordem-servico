@@ -92,7 +92,7 @@ public class UsuarioController {
 
 	}
 
-	@RequestMapping("logoutHailton")
+	@RequestMapping("logout")
 	public String logout(HttpSession session) {
 		session.invalidate();
 		return "redirect:loginForm";
