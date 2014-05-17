@@ -58,7 +58,7 @@ public class UsuarioController {
 		}
 	}
 
-	@RequestMapping("logout")
+	@RequestMapping("logoutRasa")
 	public String logout(HttpSession session) {
 		session.invalidate();
 		return "redirect:loginForm";
