@@ -1,8 +1,13 @@
 package br.com.iniciativa21.ordemservico.model.entity;
 
+import java.util.Calendar;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.NamedQuery;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 // Comentario teste para commit
 // vamos fazer um teste com esses comentarios
@@ -40,7 +45,7 @@ public class Usuario {
 	public String getPermissao() {
 		return permissao;
 	}
-	public void setPermissao2(String permissao) {
+	public void setPermissao(String permissao) {
 		this.permissao = permissao;
 	}
 
