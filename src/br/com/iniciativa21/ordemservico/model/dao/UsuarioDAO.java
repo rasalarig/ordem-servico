@@ -13,6 +13,7 @@ import br.com.iniciativa21.ordemservico.model.entity.Usuario;
 @Repository
 public class UsuarioDAO {
 
+	
 	@PersistenceContext
 	EntityManager manager;
 
