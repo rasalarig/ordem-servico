@@ -23,6 +23,7 @@ public class Usuario {
 	String email;
 	String senha;
 	String permissao;
+	
 	public Long getId_usuario() {
 		return id_usuario;
 	}
@@ -44,7 +45,7 @@ public class Usuario {
 	public String getPermissao() {
 		return permissao;
 	}
-	public void setPermissao(String permissao) {
+	public void setPermissao2(String permissao) {
 		this.permissao = permissao;
 	}
 
