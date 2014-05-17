@@ -43,10 +43,6 @@ public class UsuarioController {
 	public String FormChamados(HttpSession session) {
 		return "sistema/chamados";
 	}
-
-	
-	
-
 	
 	
 	@RequestMapping("loginForm")
