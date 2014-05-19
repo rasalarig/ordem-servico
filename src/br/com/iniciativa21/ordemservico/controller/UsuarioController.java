@@ -17,6 +17,7 @@ import br.com.iniciativa21.ordemservico.model.entity.Usuario;
 
 
 // teste merge hailton
+// teste merge 2
 @Transactional
 @Controller
 public class UsuarioController {
