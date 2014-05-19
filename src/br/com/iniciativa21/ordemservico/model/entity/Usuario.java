@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 // teste
+// teste hailton
 @Entity
 public class Usuario {
 	
