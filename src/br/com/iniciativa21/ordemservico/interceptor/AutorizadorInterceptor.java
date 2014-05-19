@@ -10,9 +10,7 @@ import br.com.iniciativa21.ordemservico.model.entity.Usuario;
 
 public class AutorizadorInterceptor extends HandlerInterceptorAdapter{
 	
-	// teste merge
-	// teste merge 2
-	// teste merge 3
+
 	@Override
 	public boolean preHandle(HttpServletRequest request,HttpServletResponse response,Object controller)
 	throws Exception{
