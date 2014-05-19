@@ -15,6 +15,10 @@ import br.com.iniciativa21.ordemservico.model.dao.DAOException;
 import br.com.iniciativa21.ordemservico.model.dao.UsuarioDAO;
 import br.com.iniciativa21.ordemservico.model.entity.Usuario;
 
+
+// teste merge hailton
+// teste merge hailton 1
+// teste merge 2
 @Transactional
 @Controller
 public class UsuarioController {
