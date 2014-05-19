@@ -10,8 +10,13 @@ import br.com.iniciativa21.ordemservico.model.entity.Usuario;
 
 public class AutorizadorInterceptor extends HandlerInterceptorAdapter{
 	
+<<<<<<< HEAD
 	
 	// teste merge hailton local
+=======
+	// teste merge
+	// teste merge 2
+>>>>>>> branch 'master' of https://github.com/rasalarig/ordem-servico.git
 	@Override
 	public boolean preHandle(HttpServletRequest request,HttpServletResponse response,Object controller)
 	throws Exception{
