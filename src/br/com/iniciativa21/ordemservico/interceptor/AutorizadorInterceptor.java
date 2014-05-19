@@ -9,11 +9,6 @@ import br.com.iniciativa21.ordemservico.model.entity.Usuario;
 
 
 public class AutorizadorInterceptor extends HandlerInterceptorAdapter{
-	
-
-
-	// outra alteração no master
-	//teste de novo
 
 	@Override
 	public boolean preHandle(HttpServletRequest request,HttpServletResponse response,Object controller)
