@@ -28,7 +28,7 @@ public class UsuarioController {
 		return "redirect:loginForm";
 	}
 	
-	@RequestMapping("/cadastroshailton")
+	@RequestMapping("/cadastros")
 	public String FormCad(HttpSession session) {
 		return "sistema/cadastros";
 	}
